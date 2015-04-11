@@ -9,7 +9,7 @@ module.exports = function (grunt) {
             },
 
             //Gruntfile and all js files in src
-            build: ['Gruntfile.js', 'public/js/**/*.js']
+            build: ['Gruntfile.js', 'client/js/**/*.js']
         },
 
         //Compile SASS files via compass
