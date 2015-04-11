@@ -1,0 +1,30 @@
+{
+  "name": "three.learning",
+  "version": "1.0.0",
+  "description": "learning three.js and WebGL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/marvin-hinkley/three.learning.git"
+    },
+  "author": "madhouse",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "method-override": "latest",
+    "morgan": "latest"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-beep": "^0.3.1",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jshint-stylish": "^1.0.0"
+  }
+}
