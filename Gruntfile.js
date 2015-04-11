@@ -17,9 +17,8 @@ module.exports = function (grunt) {
             dev: {
                 options: {
                     sassDir: 'sass',
-                    cssDir: 'public/css',
+                    cssDir: 'client/css',
                     fontsPath: 'fonts',
-//                    importPath: ['bower_components/foundation/scss'],
                     environment: 'development',
                     outputStyle: 'expanded',
                     sourcemap: true,
@@ -35,7 +34,7 @@ module.exports = function (grunt) {
                 tasks: ['compass:dev', 'beep']
             },
             scripts: {
-                files: 'public/**/*.js',
+                files: 'client/**/*.js',
                 tasks: ['jshint', 'beep']
             }
         }

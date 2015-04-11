@@ -12,7 +12,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(methodOverride());
 
-var server = http.createServer(app).listen(process.env.PORT || 8080, function(){})
+var server = http.createServer(app).listen(process.env.PORT || 80, function(){
+    console.log('Server started at port 80 with PID ' + process.pid);
+})
 
 app.get('/*', function(req, res) {
     res.sendFile('index.html', { root: path.join(__dirname, '/client') });
